@@ -22,6 +22,7 @@
       "node_modules",
       "package.json"
     ],
+    "publish": "always",
     "directories": {
       "buildResources": "build"
     },
