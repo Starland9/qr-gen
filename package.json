@@ -1,14 +1,18 @@
 {
   "name": "qr-gen",
   "version": "1.0.0",
-  "description": "",
+  "description": "Qr Code Generator",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo 'Error: no test specified' && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "qr",
+    "code",
+    "generator"
+  ],
+  "author": "Landry Simo",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
