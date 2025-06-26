@@ -38,7 +38,8 @@
   "publish": [
     {
       "provider": "github",
-      "release": true
+      "release": true,
+      "draft": true
     }
   ],
   "keywords": [
