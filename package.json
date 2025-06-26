@@ -2,10 +2,38 @@
   "name": "qr-gen",
   "version": "1.0.0",
   "description": "Qr Code Generator",
+  "homepage": "./",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo 'Error: no test specified' && exit 1"
+    "test": "echo 'Error: no test specified' && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "org.starland.qrgen",
+    "productName": "QRGen",
+    "files": [
+      "main.js",
+      "index.html",
+      "preload.js",
+      "renderer.js",
+      "style.css",
+      "node_modules",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   },
   "keywords": [
     "qr",
@@ -16,7 +44,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^37.1.0"
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
     "qrcode": "^1.5.4"
