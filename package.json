@@ -35,6 +35,12 @@
       "target": "AppImage"
     }
   },
+  "publish": [
+    {
+      "provider": "github",
+      "release": true
+    }
+  ],
   "keywords": [
     "qr",
     "code",
